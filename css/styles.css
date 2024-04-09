@@ -1,0 +1,108 @@
+:root{ /*Custom properti. Definir características que no están en CSS*/
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --primario:#ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+    --fuente-principal: 3rem;
+
+
+}
+html{`
+    font size: 6rem;
+}
+
+body{
+
+    font-size: 16px;
+    font-family: 'krub', sans-serif;
+   
+}
+.titulo {
+    color: var(--primario);
+    text-align: center;
+    font-size: var(--fuente-principal);
+    font-family: 'Madimi One', sans-serif;
+    font-style: bold;
+    text-shadow: 4px 4px 4px #aaa;
+}/* */
+    
+h1.titulo span{
+    font-size: 2 rem;
+    color:rgb(144, 135, 222);
+}
+
+
+.titulo span {
+    font-size: 2rem; /* 1rem = 10px*/
+    color:blueviolet;
+    }
+h3{
+    font-family: 'Tangerine', sans-serif;
+    font-size: 48px;
+    text-shadow: 3px 3px#acdab7;
+
+}
+p{
+    color:brown
+    }
+/*linea de arriba verde*/
+.contenedor {
+    max-width: 120 rem; /*toma 1200 px como maximo si hay ese espacio disponible*/
+    margin: 0 auto; /*0 arriba y abajo, auto der y izq */
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /*cuando los items son en filas, los centra*/
+    background-color: var(--secundario);
+}
+/*  para hacerlo responsive se debe usar media query para cambiar
+caracteristicas según uno quiera se vea en diferentes dispositivos*/
+@media (min-width: 768px) {
+   .navegacion-principal{
+        flex-direction: row; /*hace el menú en filas para achicarlo*/
+        justify-content: space-evenly;
+ }
+}
+
+ /*Estandar de cel*/
+@media (min-width: 480) {
+}
+ /*Estandar de tablet
+@media (min-width: 768px) {
+}*/
+    
+/*Estandar de portatil o pc*/
+@media (min-width: 1140px) {
+ }
+/*Estandar de pc o portatil mas grande*/
+@media (min-width: 1400px) {
+}
+
+
+.navegacion-principal a {
+    /*background-color: var(--primario);  se le pone color primario al enlace. */
+    display: block;
+    text-align: center;
+    color: var(--blanco);  /*color texto blanco*/
+    text-decoration: none;
+    font-size: 2rem;  /*tamaño letra barra*/
+    font-weight: 700;
+    padding: 1rem ;/*ENGROSA LA LÍNEA*/
+}
+
+.navegacion-principal a:hover {  /*  */
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+
+
+
+
+ 
